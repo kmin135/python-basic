@@ -24,6 +24,10 @@ l = "left"
 r = "right"
 print(l+r)
 
+# print('a' + 5) error! 문자열+int는 그냥은 안 된다
+# casting 필요
+print('a' + str(5))
+
 # multiply
 print("=" * 10)
 print(l * 3)
