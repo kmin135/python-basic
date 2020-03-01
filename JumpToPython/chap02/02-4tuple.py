@@ -15,3 +15,9 @@ print(t4)
 print(t4_1)
 
 # t5[1] = 'error' # TypeError: 'tuple' object does not support item assignment
+
+# immutable 하지만 + 으로 새로운 튜풀을 만들 수 있음
+a = (1,2)
+b = a + (3,4)
+print(a)
+print(b)
