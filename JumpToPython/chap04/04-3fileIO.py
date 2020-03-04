@@ -2,8 +2,13 @@
 f = open('newFile', 'w')
 f.close()   # file descriptor 는 직접 닫아주는게 좋다
 
-# mode는 r, w, a 가 있다.
-# w는 기존 내용상관없이 덮어씌운다.
+'''
+mode는 r, w, a 가 있다.
+w는 기존 내용상관없이 덮어씌운다.
+
+추가 모드 b : 바이너리 모드로 파일 열기. 단독으로 쓰이지 않고 r, w, a와 함께 쓰인다.
+ex) f = open('binary_file', 'rb')
+...
 
 f = open('newFile', 'w')
 for v in range(10):
