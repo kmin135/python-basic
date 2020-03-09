@@ -8,7 +8,7 @@ w는 기존 내용상관없이 덮어씌운다.
 
 추가 모드 b : 바이너리 모드로 파일 열기. 단독으로 쓰이지 않고 r, w, a와 함께 쓰인다.
 ex) f = open('binary_file', 'rb')
-...
+'''
 
 f = open('newFile', 'w')
 for v in range(10):
