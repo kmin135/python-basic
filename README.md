@@ -1,5 +1,9 @@
 # python 기초학습
 
-## 교재
+## JumpToPython 
 
-* https://wikidocs.net/book/1
+* 교재 : https://wikidocs.net/book/1
+
+## FirstPython
+
+* 교재 : 처음 시작하는 파이썬
