@@ -17,12 +17,21 @@ t1 = tuple(s1)
 print(l1)
 print(t1)
 
-# 교집합, 합집합, 차집합
+# 교집합, 합집합, 차집합, 대칭차집합
 s1 = {1, 2, 3, 4, 5, 6}
 s2 = {4, 5, 6, 7, 8, 9}
 print(f'교집합 {s1 & s2}, {s1.intersection(s2)}')
 print(f'합집합 {s1 | s2}, {s1.union(s2)}')
 print(f'차집합 {s1 - s2}, {s1.difference(s2)}')
+print(f'대칭차집합(XOR) {s1 ^ s2}, {s1.symmetric_difference(s2)}')
+
+# 서브셋
+# s1은 s2의 서브셋인가?
+print(f'{s1 <= s2}, {s1.issubset(s2)}')
+# s1은 s2의 프로퍼 서브셋(진부분집합)인가?
+print(f'{s1 < s2}')
+# s1은 s2의 슈퍼셋인가?
+print(f'{s1 >= s2}, {s1.issuperset(s2)}') 
 
 # 집합 함수
 # add 요소 1개 추가
