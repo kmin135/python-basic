@@ -30,12 +30,13 @@ print(f'sum [1, 10) is {sum}')
 print('a', end='')
 print('b')
 
-# 리스트 내포 (List comprehension)
+# 평범한 리스트 초기화 작업
 a = [1,2,3,4]
 result = []
 for num in a:
     result.append(num * 3)
 
+# 리스트 내포 (List comprehension)
 # 위의 result를 리스트 내포를 이용하면 쉽게 만들 수 있다
 result2 = [ num * 3 for num in a]
 print(result == result2)    # True
