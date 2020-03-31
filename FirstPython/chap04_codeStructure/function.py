@@ -22,3 +22,12 @@ print_args(1, 2, 3)
 def print_kwargs(**kwargs):
     print(kwargs)
 print_kwargs(a=1, b='hahaha', c=(1,2,3))
+
+# 파이썬의 함수는 일등 시민 (매개변수로 전달 가능)
+def run_func(func, arg1, arg2):
+    return func(arg1, arg2)
+
+def add(arg1, arg2):
+    return arg1 + arg2
+
+print(run_func(add, 1, 2))
