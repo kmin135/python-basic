@@ -2,6 +2,7 @@ rows = range(1,4)
 cols = range(1,3)
 
 # list comprehension (함축, 내포)를 통한 cells list 정의
+# [ 표현식 for 항목 in iterable ]
 cells = [(row, col) for row in rows for col in cols]
 print(cells)
 
@@ -10,11 +11,13 @@ for row, col in cells:
     print(row, col)
 
 # dictionary comprehension 을 활용한 문자열의 알파벳별 개수 세기
+# { 키 표현식 : 값 표현식 for 표현식 in iterable }
 word = 'letters'
 result = {letter : word.count(letter) for letter in set(word)}
 print(result)
 
 # set comprehension
+# { 표현식 : for 표현식 in iterable }
 # comprehension에는 아래 처럼 조건도 지정 가능함. (당연히 list, dict comprehension도 가능)
 a_set = {number for number in range(1,6) if number % 3 == 1}
 print(a_set)
